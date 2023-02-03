@@ -1,0 +1,756 @@
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x1F2C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BC32 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (43):
+
+     41:         txClear();
+     42:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+=>   43:         txBitBlt (txDC(), 400, 300, 100, 130, Amogus);
+     44: 
+     45: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (43):
+
+     41:         txClear();
+     42:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+=>   43:         txBitBlt (txDC(), 400, 300, 100, 130, Amogus);
+     44: 
+     45: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 13 2023 17:43:00, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 13 2023 17:43:17
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0xE58 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BC32 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (43):
+
+     41:         txClear();
+     42:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+=>   43:         txBitBlt (txDC(), 400, 300, 100, 130, Amogus);
+     44: 
+     45: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (43):
+
+     41:         txClear();
+     42:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+=>   43:         txBitBlt (txDC(), 400, 300, 100, 130, Amogus);
+     44: 
+     45: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 13 2023 17:45:26, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 13 2023 17:45:42
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x2A18 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BC32 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (43):
+
+     41:         txClear();
+     42:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+=>   43:         txBitBlt (txDC(), 400, 300, 100, 130, Amogus);
+     44: 
+     45: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (43):
+
+     41:         txClear();
+     42:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+=>   43:         txBitBlt (txDC(), 400, 300, 100, 130, Amogus);
+     44: 
+     45: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 16 2023 16:47:51, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 16 2023 16:48:09
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 100, 140} не полностью лежит внутри изображения-источника {0, 0, 50, 92}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0xE98 (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txTransparentBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BCD0 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (47):
+
+     45: 
+     46: 
+=>   47: txTransparentBlt (txDC(), xAmogus, yAmogus, 100, 140, Amogus, TX_BLACK);
+     48: 
+     49:      if(GetAsyncKeyState (VK_UP))
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (47):
+
+     45: 
+     46: 
+=>   47: txTransparentBlt (txDC(), xAmogus, yAmogus, 100, 140, Amogus, TX_BLACK);
+     48: 
+     49:      if(GetAsyncKeyState (VK_UP))
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 16 2023 17:34:42, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 16 2023 17:35:00
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib сообщает:
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13678, функция: bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF),
+
+Сообщение: Прямоугольник копируемой области {0, 0, 100, 130} не полностью лежит внутри изображения-источника {0, 0, 50, 92}, функция txTransparentBlt() работать не будет.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x137C (Main), GetLastError(): 13 (Недопустимые данные). 
+From: c:\codeblocks\codeblocks\mingw\include\txlib.h (13677) bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF).
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004228EC in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txTransparentBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13678)
+
+# 1 0x0042BC46 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (47):
+
+     45: 
+     46: 
+=>   47: txTransparentBlt (txDC(), xAmogus, yAmogus, 100, 130, Amogus, TX_BLACK);
+     48: 
+     49:      if(GetAsyncKeyState (VK_UP))
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txTransparentBlt(HDC, double, double, double, double, HDC, double, double, COLORREF) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13677):
+
+  13675:         {
+  13676: $       SetLastError (ERROR_INVALID_DATA);
+=>13677: $       TX_ERROR ("Прямоугольник копируемой области {%g, %g, %g, %g} не полностью лежит внутри изображения-источника {%d, %d, %d, %d}, "
+  13678:                   "функция txTransparentBlt() работать не будет.", xSource, ySource, xSource + width, ySource + height, 0, 0, (int) size.x, (int) size.y);
+  13679:         }
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (47):
+
+     45: 
+     46: 
+=>   47: txTransparentBlt (txDC(), xAmogus, yAmogus, 100, 130, Amogus, TX_BLACK);
+     48: 
+     49:      if(GetAsyncKeyState (VK_UP))
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 16 2023 17:35:55, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 16 2023 17:36:12
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x307C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BD34 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 20 2023 17:02:46, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 20 2023 17:03:03
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x2ACC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BD34 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 20 2023 17:03:26, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 20 2023 17:03:43
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x2BA4 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BD3A in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 20 2023 17:47:32, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 20 2023 17:47:49
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x1F4C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BD3A in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 23 2023 16:50:16, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 23 2023 16:50:33
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x27F0 (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BD3A in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 23 2023 16:51:31, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 23 2023 16:51:48
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x266C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BD3A in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 23 2023 16:52:36, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 23 2023 16:52:53
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x62C (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BD3A in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 23 2023 16:56:02, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 23 2023 16:56:19
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
+
+--------------------------------------------------
+TXLib соболезнует...
+
+Программа: D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe, файл: c:\codeblocks\codeblocks\mingw\include\txlib.h, строка: 13628, функция: bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int),
+
+Сообщение: Параметр "sourceImage" неверен. Возможно, этот холст не создан, или уже уничтожен, или не загрузилась картинка.
+
+#1: TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400], Instance: 0x005042FC (32-bit), Flags: CMdRe0, Thread: 0x23BC (Main), GetLastError(): 13 (Недопустимые данные). 
+
+--------------------------------------------------
+Стек вызовов:
+
+# 0 0x004221C3 in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: txBitBlt() at c:/codeblocks/codeblocks/mingw/include/txlib.h (13628)
+
+# 1 0x0042BD3A in D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe: main() at D:/Multick1-main/Булат Киямдинов/main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Стек вызовов TX:
+
+# 0 in bool {anonymous}::TX::txBitBlt(HDC, double, double, double, double, HDC, double, double, unsigned int) at c:\codeblocks\codeblocks\mingw\include\txlib.h (13628):
+
+  13626:     {
+  13627: $1  if (_TX_HDC_FAILED (destImage))   return false;
+=>13628: $   if (_TX_HDC_FAILED (sourceImage)) return false;
+  13629: 
+  13630: $   POINT size = txGetExtent (sourceImage);
+
+# 1 in int main() at D:\Multick1-main\Булат Киямдинов\main.cpp (43):
+
+     41:         txSetFillColor(TX_BLACK);
+     42:         txClear();
+=>   43:         txBitBlt (txDC(), 0, 0, 800, 600, background);
+     44: 
+     45: 
+
+--------------------------------------------------
+Developed with:
+
+The Dumb Artist Library (TX Library)
+TXLib [Ver: 00173a, Rev: 171, Date: 2022-07-23 02:08:28 +0400]
+Copyright (C) Ded (Ilya Dedinsky, http://txlib.ru) <mail@txlib.ru>
+See license on: http://txlib.ru
+
+TXLib file:	c:\codeblocks\codeblocks\mingw\include\txlib.h
+Compiled:	Jan 23 2023 17:00:06, GNU g++ 4.8.1, std=201103L, MinGW Runtime 3.20, 32-bit, DEBUG
+Started:	Jan 23 2023 17:00:25
+
+Run file:	D:\Multick1-main\Булат Киямдинов\bin\Debug\Булат Киямдинов.exe
+Directory:	D:\Multick1-main\Булат Киямдинов
+
+--------------------------------------------------
