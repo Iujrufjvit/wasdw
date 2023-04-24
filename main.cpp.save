@@ -10,6 +10,23 @@ struct Amogus
     int vx;
     int vy;
 };
+struct Barrier
+{
+    int x;
+    int y;
+    int w;
+    int h;
+    COLORREF color;
+    bool visible;
+
+    void draw()
+    {
+        txSetColor(color);
+        txSetFillColor(color);
+        txRectangle(x, y, x+w, y+h);
+    }
+};
+
 struct Bullet
 {
     int x;
@@ -30,11 +47,11 @@ struct Bullet
 
 int main()
 {
-    txCreateWindow (800, 600);
+    txCreateWindow (800, 800);
     HDC background = txLoadImage ("Foncik.bmp");
      int xFon = -960;
      int yFon = 0;
-     int yAmogus = 550;
+     int yAmogus = 70ё0;
 
 
 
@@ -43,9 +60,9 @@ int main()
 
 
 
-    Amogus amogus = {567, 760, txLoadImage ("AmogusLeft.bmp"), txLoadImage ("AmogusRight.bmp"), amogus.image_right};
+    Amogus amogus = {930, 700, txLoadImage ("AmogusLeft.bmp"), txLoadImage ("AmogusRight.bmp"), amogus.image_right};
 
-    Bullet bullet = {0, 0, false, 5, 5};
+    Bullet bullet = {0, 0, false, 5, 200};
 
 
 
@@ -56,10 +73,11 @@ int main()
 
     while(!GetAsyncKeyState (VK_ESCAPE))
     {
-        txBegin();
         txSetColor (TX_WHITE);
         txSetFillColor(TX_BLACK);
         txClear();
+
+        txBegin();
 
         txBitBlt (txDC(), xFon, yFon, 1920, 900, background);
 
@@ -67,16 +85,14 @@ int main()
         //рисование
        if(bullet.visible)
         {
-           bullet.draw();
+            bullet.draw();
             bullet.y -= bullet.vy;
+        }
 
 
-
-          }
-
-     }
         if(GetAsyncKeyState (VK_DOWN))
-        {bullet.x -= bullet.vx;
+        {
+            bullet.x -= bullet.vx;
             bullet.x = amogus.x+10;
             bullet.y = amogus.y+40;
             bullet .visible = true;
@@ -119,14 +135,12 @@ int main()
             }
         }
 
-
-
         //условие гравитации
         amogus.y +=20;
         //условия земли
-        if(amogus.y > y0Amogus-90)
+        if(amogus.y > yAmogus-90)
         {
-            amogus.y = y0Amogus-90;
+            amogus.y = yAmogus-90;
         }
         if(GetAsyncKeyState (VK_SPACE))
         {
@@ -134,14 +148,10 @@ int main()
         }
 
 
-
-
-
-
-
-      }
         txEnd();
         txSleep(10);
+      }
+
 
 
     txDeleteDC (background);

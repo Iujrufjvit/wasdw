@@ -10,6 +10,23 @@ struct Amogus
     int vx;
     int vy;
 };
+struct Barrier
+{
+    int x;
+    int y;
+    int w;
+    int h;
+    COLORREF color;
+    bool visible;
+
+    void draw()
+    {
+        txSetColor(color);
+        txSetFillColor(color);
+        txRectangle(x, y, x+w, y+h);
+    }
+};
+
 struct Bullet
 {
     int x;
@@ -28,13 +45,14 @@ struct Bullet
 
 
 
+
 int main()
 {
-    txCreateWindow (800, 600);
+    txCreateWindow (800, 800);
     HDC background = txLoadImage ("Foncik.bmp");
      int xFon = -960;
      int yFon = 0;
-     int yAmogus = 550;
+     int yAmogus = 700;
 
 
 
@@ -43,10 +61,16 @@ int main()
 
 
 
-    Amogus amogus = {930, 841, txLoadImage ("AmogusLeft.bmp"), txLoadImage ("AmogusRight.bmp"), amogus.image_right};
+    Amogus amogus = {930, 700, txLoadImage ("AmogusLeft.bmp"), txLoadImage ("AmogusRight.bmp"), amogus.image_right};
+
 
     Bullet bullet = {0, 0, false, 5, 200};
 
+
+    int count_bar = 5;
+    Barrier bar[count_bar];
+    bar[0] = { 50, 50, 50, 50, TX_WHITE, true};
+    for(int i=1; i<=count_bar; i++)
 
 
 
